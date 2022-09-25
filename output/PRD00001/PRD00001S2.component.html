@@ -1,0 +1,516 @@
+<div #PRD00001S2 class='overlay-height PRD00001S2'>
+  <div class='overlay-header'>{{title}}</div>
+  <div class='overlay-body-no-footer'>
+    
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>商品代碼</span>
+          <es-textbox
+           [(esModel)]='tioa.planCode'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示商品代碼</span>
+          <es-textbox
+           [(esModel)]='tioa.dispPlanCode'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示商品名稱</span>
+          <es-textbox
+           [(esModel)]='tioa.dispPlanName'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>商品類型</span>
+          <es-select
+            [(esModel)]='tioa.planType'
+            [options]='cbData.planType'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示商品類型</span>
+          <es-select
+            [(esModel)]='tioa.dispPlanType'
+            [options]='cbData.dispPlanType'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>實支實付類型</span>
+          <es-select
+            [(esModel)]='tioa.payGoType'
+            [options]='cbData.payGoType'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>開始日期</span>
+          <es-textbox
+           [(esModel)]='tioa.bgnDate'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>結束日期</span>
+          <es-textbox
+           [(esModel)]='tioa.endDate'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>是否為主約</span>
+          <es-select
+            [(esModel)]='tioa.isMain'
+            [options]='cbData.isMain'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>是否為多型別</span>
+          <es-select
+            [(esModel)]='tioa.isMultiKind'
+            [options]='cbData.isMultiKind'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>是否為多幣別</span>
+          <es-select
+            [(esModel)]='tioa.isMultiCuy'
+            [options]='cbData.isMultiCuy'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>幣別</span>
+          <es-select
+            [(esModel)]='tioa.cuy'
+            [options]='cbData.cuy'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>投保對象</span>
+          <es-select
+            [(esModel)]='tioa.insObject'
+            [options]='cbData.insObject'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>要被保人同一人</span>
+          <es-select
+            [(esModel)]='tioa.isSamePerson'
+            [options]='cbData.isSamePerson'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>性別</span>
+          <es-select
+            [(esModel)]='tioa.sex'
+            [options]='cbData.sex'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>投保最低職業等級</span>
+          <es-select
+            [(esModel)]='tioa.insBgnJobGrade'
+            [options]='cbData.insBgnJobGrade'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>投保最高職業等級</span>
+          <es-select
+            [(esModel)]='tioa.insEndJobGrade'
+            [options]='cbData.insEndJobGrade'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保額輸入類型</span>
+          <es-select
+            [(esModel)]='tioa.amtInputType'
+            [options]='cbData.amtInputType'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保額下限</span>
+          <es-textbox
+           [(esModel)]='tioa.bgnAmt'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保額上限</span>
+          <es-textbox
+           [(esModel)]='tioa.endAmt'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保額預設</span>
+          <es-textbox
+           [(esModel)]='tioa.amtDefault'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保額單位</span>
+          <es-textbox
+           [(esModel)]='tioa.amtUnit'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示保額單位</span>
+          <es-textbox
+           [(esModel)]='tioa.dispAmtUnit'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示保額文字</span>
+          <es-textbox
+           [(esModel)]='tioa.dispAmtText'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>精算保額單位</span>
+          <es-textbox
+           [(esModel)]='tioa.actAmtUnit'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>豁免保額類型</span>
+          <es-select
+            [(esModel)]='tioa.waiverAmtType'
+            [options]='cbData.waiverAmtType'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>繳別</span>
+          <es-select
+            [(esModel)]='tioa.payFreq'
+            [options]='cbData.payFreq'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>首期繳費方式</span>
+          <es-select
+            [(esModel)]='tioa.firstPayWay'
+            [options]='cbData.firstPayWay'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>續期繳費方式</span>
+          <es-select
+            [(esModel)]='tioa.renewPayWay'
+            [options]='cbData.renewPayWay'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>是否有集體彙繳</span>
+          <es-select
+            [(esModel)]='tioa.isGroupPay'
+            [options]='cbData.isGroupPay'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保費類型</span>
+          <es-select
+            [(esModel)]='tioa.premType'
+            [options]='cbData.premType'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>身故保險金類型</span>
+          <es-select
+            [(esModel)]='tioa.deathBenefitType'
+            [options]='cbData.deathBenefitType'
+            [hasSpace]='true'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>第一階段保額上限</span>
+          <es-textbox
+           [(esModel)]='tioa.fstEndAmt'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>第一階段增值回饋金結束年度</span>
+          <es-textbox
+           [(esModel)]='tioa.fstAddedBonusEndYear'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>第二階段增值回饋金結束年度</span>
+          <es-textbox
+           [(esModel)]='tioa.sndAddedBonusEndYear'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>第三階段增值回饋金結束年度</span>
+          <es-textbox
+           [(esModel)]='tioa.thdAddedBonusEndYear'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>最低基本保險費(投資型)</span>
+          <es-textbox
+           [(esModel)]='tioa.bgnInvBasicPrem'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>最高基本保險費(投資型)</span>
+          <es-textbox
+           [(esModel)]='tioa.endInvBasicPrem'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>基本保險費單位(投資型)</span>
+          <es-textbox
+           [(esModel)]='tioa.invBasicPremUnit'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示基本保險費單位(投資型)</span>
+          <es-textbox
+           [(esModel)]='tioa.dispInvBasicPremUnit'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>顯示基本保險費文字(投資型)</span>
+          <es-textbox
+           [(esModel)]='tioa.dispInvBasicPremText'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>精算年金生命表百分比值</span>
+          <es-textbox
+           [(esModel)]='tioa.factorAnnuityPercentValue'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保單維護費用門檻(元)</span>
+          <es-textbox
+           [(esModel)]='tioa.maintainFeeThreshold'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保單維護費用值(元)</span>
+          <es-textbox
+           [(esModel)]='tioa.maintainFeeValue'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>保費費用百分比值</span>
+          <es-textbox
+           [(esModel)]='tioa.premFeePercentValue'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>加值給付金百分比值</span>
+          <es-textbox
+           [(esModel)]='tioa.benefitGrantedPercentValue'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>個別保障試算類型</span>
+          <es-textbox
+           [(esModel)]='tioa.individualCoverCalcType'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>豁免貼現率</span>
+          <es-textbox
+           [(esModel)]='tioa.waiverDiscountRate'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>高齡錄音</span>
+          <es-select
+            [(esModel)]='tioa.agedRecord'
+            [options]='cbData.agedRecord'>
+          </es-select>
+       </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>建立時間</span>
+          <es-textbox
+           [(esModel)]='tioa.createTime'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>建立人員</span>
+          <es-textbox
+           [(esModel)]='tioa.creator'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>修改時間</span>
+          <es-textbox
+           [(esModel)]='tioa.modifyTime'>
+          </es-textbox>
+        </div>
+      </div>
+
+      <div class='row-fluid'>
+        <div class='span12'>
+          <span class='eControl eTitle'>修改人員</span>
+          <es-textbox
+           [(esModel)]='tioa.modifier'>
+          </es-textbox>
+        </div>
+      </div>
+
+    <div class='span12 eDivMiddle'>
+      <es-button class='eBtn' (click)='txnSubmit()'>確定</es-button>
+      <es-button class='eBtn' (click)='closeDialog(false)'>關閉</es-button>
+    </div>
+  </div>
+</div>

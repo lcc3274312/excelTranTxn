@@ -1,0 +1,7 @@
+.agGrid {
+  height: calc(100vh - 385px);
+}
+
+.<var_txnCode> [class*="span"] span {
+  width: 140px;
+}

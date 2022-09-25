@@ -1,0 +1,25 @@
+<div #<var_txnCode> class='<var_txnCode>'>
+  <div class='row-fluid'>
+    <div class='span12'>
+      <var_QueryContent>
+      <es-button class='eBtn' [disabled]='!hasAuth("Query")' (click)='queryTxn("0")'>查詢</es-button>
+    </div>
+  </div>
+  <div class='row-fluid '>
+    <div class='span12 '>
+      <div class='ngGridStyle'>
+        <ag-grid-angular
+          class='ag-theme-balham agGrid'
+          [gridOptions]='<var_txnCode>GridOptions'
+          [rowData]='<var_txnCode>RowData'>
+        </ag-grid-angular>
+      </div>
+    </div>
+  </div>
+  <div class='span12 eDivMiddle'>
+    <es-button class='eBtn' *ngIf='hasLastPage' (click)='pageQuery("last")'>上一頁</es-button>
+    <es-button class='eBtn' *ngIf='hasNextPage' (click)='pageQuery("next")'>下一頁</es-button>
+    <es-button class='eBtn' [disabled]='!hasAuth("AddEditDel")' (click)='txnSubmit()'>確定</es-button>
+    <es-button class='eBtn' (click)='exitTxn()'>關閉</es-button>
+  </div>
+</div>
