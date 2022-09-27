@@ -19,7 +19,7 @@
   <div class='span12 eDivMiddle'>
     <es-button class='eBtn' *ngIf='hasLastPage' (click)='pageQuery("last")'>上一頁</es-button>
     <es-button class='eBtn' *ngIf='hasNextPage' (click)='pageQuery("next")'>下一頁</es-button>
-    <es-button class='eBtn' [disabled]='!hasAuth("AddEditDel")' (click)='txnSubmit()'>確定</es-button>
+    <es-button class='eBtn' [disabled]='!hasAuth("AddEditDel")' (esClick)='addEditViewRow("Add")'>新增</es-button>
     <es-button class='eBtn' (click)='exitTxn()'>關閉</es-button>
   </div>
 </div>

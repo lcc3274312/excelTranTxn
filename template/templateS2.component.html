@@ -3,8 +3,8 @@
   <div class='overlay-body-no-footer'>
     <var_QueryContent>
     <div class='span12 eDivMiddle'>
-      <es-button class='eBtn' (click)='txnSubmit()'>確定</es-button>
-      <es-button class='eBtn' (click)='closeDialog(false)'>關閉</es-button>
+      <es-button class='eBtn' [disabled]="!hasAuth('AddEditDel') || viewMode" (esClick)='txnSubmit()'>儲存</es-button>
+      <es-button class='eBtn' (esClick)='closeDialog(false)'>關閉</es-button>
     </div>
   </div>
 </div>
